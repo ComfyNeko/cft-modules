@@ -17,11 +17,12 @@
 variable "project_id" {
   description = "The ID of the project in which resources will be provisioned."
   type        = string
+  default = ""
 }
 
 variable "db_name" {
   description = "The name of the SQL Database instance"
-  default     = "example-mysql-public"
+  default     = ""
 }
 
 variable "authorized_networks" {
